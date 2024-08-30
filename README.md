@@ -4,7 +4,7 @@ This is a boot logo for Plymouth that enables Framework's firmware image, while 
 Follow the steps below to use in a flake-enabled environment:
 
 ## 01. Add flake input
-Inside your flake.nix file, add theh following to your inputs:
+Inside your flake.nix file, add the following to your inputs:
 
 `inputs.framework-laptop.url = "github:JaysFreaky/framework-laptop";`
 
