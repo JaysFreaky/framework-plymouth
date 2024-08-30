@@ -29,3 +29,8 @@ plymouth = {
   themePackages = [ framework-plymouth ];
 };
 ```
+
+---
+# Credits
+I came across this theme created by [James Kupke](https://git.sr.ht/~jameskupke/framework-plymouth-theme) and wanted to use it for NixOS. I ended up making a few adjustments to it and then packaged it up into this.
+
