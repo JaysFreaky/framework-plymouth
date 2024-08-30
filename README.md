@@ -30,10 +30,12 @@ plymouth = {
 };
 ```
 
-You could skip the previous declaration and just include the inputs path, but the variable method looks better:
+You could skip the variable declaration and just include the inputs path, but a variable looks better:
 
 ```nix
-themePackages = [ inputs.framework-plymouth.packages.${pkgs.system}.default ];
+  ...
+  themePackages = [ inputs.framework-plymouth.packages.${pkgs.system}.default ];
+  ...
 ```
 
 ---
