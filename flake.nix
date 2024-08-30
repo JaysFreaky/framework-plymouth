@@ -10,8 +10,8 @@
     eachSystem = nixpkgs.lib.genAttrs (import systems);
   in {
     packages = eachSystem (system: rec {
-        framework-plymouth = nixpkgs.legacyPackages.${system}.callPackage ./framework-plymouth.nix { };
-        default = framework-plymouth;
+      framework-plymouth = nixpkgs.legacyPackages.${system}.callPackage ./framework-plymouth.nix { };
+      default = framework-plymouth;
     });
   };
 }
