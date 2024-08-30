@@ -20,7 +20,7 @@ in {
 ```
 
 ## 03. Declare plymouth theme
-You could skip the previous declaration and just include the inputs path, but this method looks better:
+To use this package, set the theme and themePackages as so:
 
 ```nix
 plymouth = {
@@ -30,7 +30,13 @@ plymouth = {
 };
 ```
 
+You could skip the previous declaration and just include the inputs path, but the variable method looks better:
+
+```nix
+themePackages = [ inputs.framework-plymouth.packages.${pkgs.system}.default ];
+```
+
 ---
 # Credits
-I came across this theme created by [James Kupke](https://git.sr.ht/~jameskupke/framework-plymouth-theme) and wanted to use it for NixOS. I ended up making a few adjustments to it and then packaged it up into this.
+I came across this theme created by [James Kupke](https://git.sr.ht/~jameskupke/framework-plymouth-theme) and wanted to use it for NixOS, so I ended up making a few adjustments in the derivation and packaging it up via this flake.
 
